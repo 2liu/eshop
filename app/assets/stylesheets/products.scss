@@ -1,0 +1,193 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+    display: block;
+}
+
+.clear, .clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.col-md-3 span{
+  overflow: hidden;
+  height: 1.2em;
+  display: block;
+}
+
+.red{
+  color: #b61d1d;
+}
+
+.cart-badge {
+    display: inline-block;
+    min-width: 12px;
+    padding: 3px 7px 3px 7px;
+    font-size: 10px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1;
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #b61d1d;
+    border-radius: 10px;
+}
+
+
+#mycart{
+  z-index: 11;
+  height: 36px;
+  // margin-top: 25px;
+  font-size: 12px;
+
+}
+
+.dorpdown {
+    position: relative;
+}
+
+
+.dropdown:hover .cart-dropdown{
+  display: block;
+  width: 308px;
+  right: 0;
+  _right: -1px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,.2)
+}
+
+.cart-dropdown{
+  display: none;
+  position: absolute;
+}
+
+.cart-dropdown h4{
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+#cart-content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: #fff;
+  padding-left: 5px;
+  padding-bottom: 5px;
+
+}
+
+.mcart-ci{
+
+}
+
+.ci_t{
+    background: #bffab1;
+    padding: 8px 0px;
+}
+.ci_t .fl{
+  vertical-align: middle;
+}
+
+.ci_t .fr{
+  padding-right: 5px;
+}
+
+.fl span{
+  background: #3b0;
+  color: #fff;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+.ci_content{
+  padding: 5px;
+}
+
+#cart-content .p-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 0;
+}
+
+#cart-content .p-name {
+    float: left;
+    width: 120px;
+    height: 52px;
+    overflow: hidden;
+}
+
+#cart-content .p-detail {
+    float: right;
+    text-align: right;
+    overflow: hidden;
+}
+
+#cart-content .p-price {
+    font-weight: 700;
+    overflow: hidden;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+.cart-footer {
+    padding-top: 8px;
+    background: #f5f5f5;
+    height: 45px;
+    width: 100%;
+    _padding-top: 15px;
+    _padding-bottom: 0;
+}
+
+.cart-footer .p-total {
+    float: left;
+    line-height: 29px;
+    margin-left: 5px;
+}
+
+.cart-footer a, .cart-footer a:hover {
+  float: right;
+  height: 29px;
+  padding: 0 10px;
+  background: #e4393c;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  line-height: 29px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
