@@ -1,0 +1,24 @@
+<div class="container">
+ <% unless @products.blank? %>
+
+    <div class="clearfix"></div>
+    <div class="row">
+      <% @products.each do |product| %>
+    	<div class="col-xs-6 col-md-3">
+    	  <%= link_to product_path(product) do %>
+    		  <% if product.photo.present? %>
+    			  <%= image_tag(product.photo.thumb.url, class: "thumbnail") %>
+    		  <% else %>
+    			  <%= image_tag("no-pic.png", class: "thumbnail") %>
+    		  <% end %>
+    	  <% end %>
+    	  <span><%= product.title %></span><br> ¥ <%= product.price %>
+    	</div>
+      <% end %>
+    </div>
+    <div class="text-center"><%= will_paginate @products, :class => "apple_pagination" %></div>
+<% else %>
+	"抱歉，没有找到指定的产品"
+<% end %>
+
+</div>

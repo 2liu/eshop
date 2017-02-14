@@ -38,6 +38,11 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'awesome_rails_console'
+gem 'ransack'
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
